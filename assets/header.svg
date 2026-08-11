@@ -1,31 +1,150 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
-  <title id="title">Zain — software engineer and product builder</title>
-  <desc id="desc">A cobalt field-note title sheet for Zain's public work record, introducing software for developer tools, AI, browser utilities, and desktop experiences.</desc>
-  <rect width="1200" height="560" fill="#173B82"/>
-  <path d="M48 48H1152M48 512H1152" stroke="#F3F1E8" stroke-width="2"/>
-  <path d="M48 48V512M1152 48V512" stroke="#F3F1E8" stroke-width="1" opacity=".55"/>
-  <g fill="#F3F1E8" font-family="sans-serif" font-size="13" font-weight="700" letter-spacing="2">
-    <text x="76" y="88">LETRQUAN / PUBLIC WORK RECORD</text>
-    <text x="1124" y="88" text-anchor="end">ISSUE 01</text>
-    <text x="76" y="484">SOFTWARE ENGINEER / PRODUCT BUILDER</text>
-    <text x="1124" y="484" text-anchor="end">FIELD NOTES · 2026</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 460" width="100%" role="img" aria-labelledby="header-title header-desc">
+  <title id="header-title">Zain — Software Engineer &amp; Product Builder</title>
+  <desc id="header-desc">Developer terminal and workspace overview for Zain, building AI agents, browser utilities, and Rust desktop applications.</desc>
+
+  <defs>
+    <linearGradient id="bg-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0F19"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="panel-grad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#131C2E"/>
+      <stop offset="100%" stop-color="#0F172A"/>
+    </linearGradient>
+    <linearGradient id="cyan-glow" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#38BDF8"/>
+      <stop offset="100%" stop-color="#818CF8"/>
+    </linearGradient>
+    <pattern id="grid" width="40" height="40" patternUnits="userSpaceOnUse">
+      <path d="M 40 0 L 0 0 0 40" fill="none" stroke="#1E293B" stroke-width="1" opacity="0.4"/>
+    </pattern>
+  </defs>
+
+  <!-- Background base -->
+  <rect width="1200" height="460" fill="url(#bg-grad)"/>
+  <rect width="1200" height="460" fill="url(#grid)"/>
+
+  <!-- Top accent rule -->
+  <rect width="1200" height="3" fill="url(#cyan-glow)"/>
+
+  <!-- Main Terminal Window Frame -->
+  <rect x="50" y="45" width="1100" height="370" rx="10" fill="url(#panel-grad)" stroke="#334155" stroke-width="1.5"/>
+
+  <!-- Window Bar Header -->
+  <path d="M 50 55 A 10 10 0 0 1 60 45 L 1140 45 A 10 10 0 0 1 1150 55 L 1150 85 L 50 85 Z" fill="#0F172A" stroke="#334155" stroke-width="1"/>
+  <line x1="50" y1="85" x2="1150" y2="85" stroke="#334155" stroke-width="1"/>
+
+  <!-- Window Control Buttons -->
+  <circle cx="80" cy="65" r="6" fill="#EF4444"/>
+  <circle cx="100" cy="65" r="6" fill="#F59E0B"/>
+  <circle cx="120" cy="65" r="6" fill="#10B981"/>
+
+  <!-- Window Title / Active Tab -->
+  <rect x="155" y="53" width="140" height="32" rx="6" fill="#131C2E" stroke="#334155" stroke-width="1"/>
+  <text x="185" y="74" fill="#38BDF8" font-family="'JetBrains Mono', monospace, sans-serif" font-size="13" font-weight="600">developer.ts</text>
+  <circle cx="172" cy="70" r="4" fill="#38BDF8"/>
+
+  <text x="315" y="74" fill="#64748B" font-family="'JetBrains Mono', monospace, sans-serif" font-size="13">zain@workspace ~</text>
+
+  <!-- Left Side: Interactive Code Panel -->
+  <g transform="translate(85, 115)">
+    <text font-family="'JetBrains Mono', 'Fira Code', monospace" font-size="14" leading="24">
+      <tspan x="0" y="20" fill="#F43F5E">const</tspan>
+      <tspan fill="#38BDF8"> developer</tspan>
+      <tspan fill="#94A3B8"> = {</tspan>
+
+      <tspan x="20" y="48" fill="#E2E8F0">name:</tspan>
+      <tspan fill="#34D399"> "Zain"</tspan>
+      <tspan fill="#94A3B8">,</tspan>
+
+      <tspan x="20" y="76" fill="#E2E8F0">role:</tspan>
+      <tspan fill="#34D399"> "Software Engineer &amp; Product Builder"</tspan>
+      <tspan fill="#94A3B8">,</tspan>
+
+      <tspan x="20" y="104" fill="#E2E8F0">focus:</tspan>
+      <tspan fill="#94A3B8"> [</tspan>
+      <tspan fill="#F59E0B">"AI Agents"</tspan>
+      <tspan fill="#94A3B8">, </tspan>
+      <tspan fill="#F59E0B">"Browser Utilities"</tspan>
+      <tspan fill="#94A3B8">, </tspan>
+      <tspan fill="#F59E0B">"Desktop Apps"</tspan>
+      <tspan fill="#94A3B8">],</tspan>
+
+      <tspan x="20" y="132" fill="#E2E8F0">stack:</tspan>
+      <tspan fill="#94A3B8"> [</tspan>
+      <tspan fill="#38BDF8">"TypeScript"</tspan>
+      <tspan fill="#94A3B8">, </tspan>
+      <tspan fill="#38BDF8">"Rust"</tspan>
+      <tspan fill="#94A3B8">, </tspan>
+      <tspan fill="#38BDF8">"React"</tspan>
+      <tspan fill="#94A3B8">, </tspan>
+      <tspan fill="#38BDF8">"Tauri 2"</tspan>
+      <tspan fill="#94A3B8">],</tspan>
+
+      <tspan x="20" y="160" fill="#E2E8F0">philosophy:</tspan>
+      <tspan fill="#34D399"> "Useful tools, sharp interfaces &amp; reliable foundations"</tspan>
+
+      <tspan x="0" y="195" fill="#94A3B8">};</tspan>
+    </text>
+
+    <!-- Prompt line -->
+    <g transform="translate(0, 230)">
+      <text x="0" y="18" fill="#34D399" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="700">❯</text>
+      <text x="20" y="18" fill="#E2E8F0" font-family="'JetBrains Mono', monospace" font-size="14">zain --status</text>
+      <text x="145" y="18" fill="#38BDF8" font-family="'JetBrains Mono', monospace" font-size="14">--active</text>
+      <rect x="225" y="4" width="9" height="18" fill="#38BDF8">
+        <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+      </rect>
+    </g>
   </g>
-  <g transform="translate(76 146)" fill="#F3F1E8" fill-rule="evenodd">
-    <path d="M0 0H194V40L63 192H194V232H0V192L131 40H0Z"/>
-    <path d="M218 232L291 0H359L432 232H385L370 179H279L264 232ZM292 139H357L325 39Z"/>
-    <path d="M458 0H505V232H458Z"/>
-    <path d="M531 232V0H579L681 156V0H728V232H681L578 74V232Z"/>
+
+  <!-- Right Side: Architecture & Shipped Systems Dashboard -->
+  <g transform="translate(640, 115)">
+    <!-- Header for panel -->
+    <text x="0" y="18" fill="#64748B" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700" letter-spacing="1.5">// SHIPPED RELEASES</text>
+
+    <!-- Card 1: Book CLI -->
+    <g transform="translate(0, 32)">
+      <rect width="460" height="62" rx="8" fill="#0F172A" stroke="#1E293B" stroke-width="1"/>
+      <circle cx="28" cy="31" r="5" fill="#10B981"/>
+      <text x="45" y="27" fill="#F8FAFC" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="700">Book CLI</text>
+      <rect x="125" y="13" width="75" height="20" rx="4" fill="#1E293B"/>
+      <text x="162" y="27" fill="#38BDF8" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" text-anchor="middle">v1.4.0</text>
+      <text x="45" y="48" fill="#94A3B8" font-family="sans-serif" font-size="12">Provider-agnostic AI coding agent · Terminal UI · MCP</text>
+      <text x="440" y="36" fill="#64748B" font-family="sans-serif" font-size="14" text-anchor="end">→</text>
+    </g>
+
+    <!-- Card 2: Better Picture -->
+    <g transform="translate(0, 106)">
+      <rect width="460" height="62" rx="8" fill="#0F172A" stroke="#1E293B" stroke-width="1"/>
+      <circle cx="28" cy="31" r="5" fill="#38BDF8"/>
+      <text x="45" y="27" fill="#F8FAFC" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="700">Better Picture</text>
+      <rect x="165" y="13" width="95" height="20" rx="4" fill="#1E293B"/>
+      <text x="212" y="27" fill="#34D399" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" text-anchor="middle">Manifest V3</text>
+      <text x="45" y="48" fill="#94A3B8" font-family="sans-serif" font-size="12">Caption-aware floating mini-player for Chrome &amp; Edge</text>
+      <text x="440" y="36" fill="#64748B" font-family="sans-serif" font-size="14" text-anchor="end">→</text>
+    </g>
+
+    <!-- Card 3: V Voice -->
+    <g transform="translate(0, 180)">
+      <rect width="460" height="62" rx="8" fill="#0F172A" stroke="#1E293B" stroke-width="1"/>
+      <circle cx="28" cy="31" r="5" fill="#F59E0B"/>
+      <text x="45" y="27" fill="#F8FAFC" font-family="'JetBrains Mono', monospace" font-size="14" font-weight="700">V Voice</text>
+      <rect x="115" y="13" width="70" height="20" rx="4" fill="#1E293B"/>
+      <text x="150" y="27" fill="#F59E0B" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600" text-anchor="middle">Tauri 2</text>
+      <text x="45" y="48" fill="#94A3B8" font-family="sans-serif" font-size="12">Lightweight Windows dictation powered by Whisper</text>
+      <text x="440" y="36" fill="#64748B" font-family="sans-serif" font-size="14" text-anchor="end">→</text>
+    </g>
   </g>
-  <g transform="translate(898 174)" fill="none">
-    <circle cx="105" cy="105" r="83" stroke="#F3F1E8" stroke-width="2"/>
-    <circle cx="105" cy="105" r="49" stroke="#F15A24" stroke-width="11"/>
-    <path d="M105 0V210M0 105H210" stroke="#F3F1E8" stroke-width="1" opacity=".72"/>
-    <path d="M22 105H188M105 22V188" stroke="#F15A24" stroke-width="1" opacity=".8"/>
-    <circle cx="105" cy="105" r="6" fill="#F3F1E8"/>
-    <path d="M-12 0H24V36H-12ZM186 174H222V210H186Z" fill="#F15A24" stroke="none"/>
-  </g>
-  <g fill="#F3F1E8" font-family="sans-serif" font-size="14" font-weight="700" letter-spacing="1.3">
-    <text x="76" y="424">AI AGENTS · BROWSER UTILITIES · DESKTOP EXPERIENCES</text>
-    <text x="1003" y="421" text-anchor="middle" font-size="10" letter-spacing="1.6">USEFUL SOFTWARE</text>
-  </g>
+
+  <!-- Footer status bar inside terminal -->
+  <line x1="50" y1="385" x2="1150" y2="385" stroke="#334155" stroke-width="1"/>
+  <rect x="50" y="386" width="1100" height="29" fill="#0F172A" rx="0"/>
+  <path d="M 50 386 L 1150 386 L 1140 415 A 10 10 0 0 1 1140 415 L 60 415 A 10 10 0 0 1 50 386 Z" fill="#0F172A"/>
+
+  <text x="75" y="405" fill="#10B981" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600">● READY</text>
+  <text x="150" y="405" fill="#64748B" font-family="'JetBrains Mono', monospace" font-size="11">UTF-8</text>
+  <text x="210" y="405" fill="#64748B" font-family="'JetBrains Mono', monospace" font-size="11">TypeScript / Rust</text>
+
+  <text x="1125" y="405" fill="#38BDF8" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="end">github.com/letrquan</text>
 </svg>

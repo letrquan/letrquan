@@ -1,26 +1,124 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 500" role="img" aria-labelledby="title desc">
-  <title id="title">Book</title>
-  <desc id="desc">Project dossier for Book, a provider-agnostic AI coding agent with a rich terminal user interface, persistent sessions, memory, MCP support, and managed agents.</desc>
-  <rect width="1200" height="500" fill="#F3F1E8"/>
-  <path d="M42 42H1158M42 458H1158" stroke="#121212" stroke-width="2"/>
-  <path d="M42 42V458M1158 42V458" stroke="#121212" stroke-width="1" opacity=".55"/>
-  <g font-family="sans-serif" fill="#121212">
-    <text x="72" y="81" font-size="13" font-weight="700" letter-spacing="2">RELEASE 01 / AI CODING AGENT</text>
-    <text x="1128" y="81" text-anchor="end" font-size="13" font-weight="700" letter-spacing="2">ACTIVE RECORD</text>
-    <text x="72" y="220" font-size="112" font-weight="900" letter-spacing="-6">BOOK</text>
-    <text x="78" y="272" font-size="21" font-weight="700">Provider-agnostic coding agent with a rich terminal UI.</text>
-    <text x="78" y="307" font-size="18">Persistent sessions · memory · MCP support · managed agents</text>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="100%" role="img" aria-labelledby="book-title book-desc">
+  <title id="book-title">Book — Provider-agnostic AI Coding Agent</title>
+  <desc id="book-desc">Project dossier and terminal mockup for Book, an AI coding agent with Ink TUI, memory, MCP support, and managed subagents.</desc>
+
+  <defs>
+    <linearGradient id="book-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0B0F19"/>
+      <stop offset="100%" stop-color="#111827"/>
+    </linearGradient>
+    <linearGradient id="book-term-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#090D16"/>
+    </linearGradient>
+    <linearGradient id="emerald-accent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#10B981"/>
+      <stop offset="100%" stop-color="#34D399"/>
+    </linearGradient>
+  </defs>
+
+  <!-- Container Base -->
+  <rect width="1200" height="480" fill="url(#book-bg)" rx="12" stroke="#1E293B" stroke-width="1.5"/>
+  <rect x="0" y="0" width="1200" height="480" rx="12" fill="none" stroke="#10B981" stroke-width="2" opacity="0.3"/>
+
+  <!-- Left Column: Details & Information -->
+  <g transform="translate(60, 55)">
+    <!-- Kicker / Tag -->
+    <rect x="0" y="0" width="150" height="24" rx="4" fill="#065F46" opacity="0.6"/>
+    <text x="12" y="16" fill="#34D399" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" letter-spacing="1">PROJECT // 01</text>
+
+    <!-- Title -->
+    <text x="0" y="72" fill="#F8FAFC" font-family="'Inter', sans-serif" font-size="44" font-weight="900" letter-spacing="-1">Book CLI</text>
+    <text x="0" y="102" fill="#34D399" font-family="'JetBrains Mono', monospace" font-size="15" font-weight="600">Provider-Agnostic AI Coding Agent</text>
+
+    <!-- Description -->
+    <text x="0" y="138" fill="#94A3B8" font-family="sans-serif" font-size="14" leading="22">
+      <tspan x="0" y="138">An autonomous terminal CLI agent built for developer workflow.</tspan>
+      <tspan x="0" y="160">Features persistent sessions, memory graph, Model Context</tspan>
+      <tspan x="0" y="182">Protocol (MCP) integration, and parallel subagent execution.</tspan>
+    </text>
+
+    <!-- Bullet Highlights -->
+    <g transform="translate(0, 210)">
+      <circle cx="6" cy="12" r="3" fill="#10B981"/>
+      <text x="18" y="16" fill="#CBD5E1" font-family="sans-serif" font-size="13">Rich Terminal UI built with React Ink</text>
+
+      <circle cx="6" cy="38" r="3" fill="#10B981"/>
+      <text x="18" y="42" fill="#CBD5E1" font-family="sans-serif" font-size="13">MCP Server &amp; Tool Ecosystem Support</text>
+
+      <circle cx="6" cy="64" r="3" fill="#10B981"/>
+      <text x="18" y="68" fill="#CBD5E1" font-family="sans-serif" font-size="13">Autonomous Subagent Delegation &amp; Workspaces</text>
+    </g>
+
+    <!-- Stack Pills -->
+    <g transform="translate(0, 320)">
+      <rect x="0" y="0" width="105" height="30" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+      <text x="52" y="19" fill="#38BDF8" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600" text-anchor="middle">TypeScript</text>
+
+      <rect x="115" y="0" width="85" height="30" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+      <text x="157" y="19" fill="#F43F5E" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600" text-anchor="middle">Ink TUI</text>
+
+      <rect x="210" y="0" width="75" height="30" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+      <text x="247" y="19" fill="#34D399" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600" text-anchor="middle">MCP</text>
+
+      <rect x="295" y="0" width="95" height="30" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+      <text x="342" y="19" fill="#F59E0B" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600" text-anchor="middle">Node.js</text>
+    </g>
   </g>
-  <g transform="translate(790 121)" fill="none" stroke="#173B82">
-    <rect x="0" y="0" width="290" height="207" stroke-width="3"/>
-    <path d="M0 42H290M47 42V207M0 162H290" stroke-width="2"/>
-    <path d="M78 82L114 112L78 142M139 142H218" stroke="#F15A24" stroke-width="8" stroke-linecap="square" stroke-linejoin="miter"/>
-    <circle cx="249" cy="21" r="7" fill="#F15A24" stroke="none"/>
+
+  <!-- Right Column: Interactive Terminal Mockup -->
+  <g transform="translate(540, 45)">
+    <!-- Terminal Box -->
+    <rect width="600" height="390" rx="10" fill="url(#book-term-bg)" stroke="#334155" stroke-width="1.5"/>
+
+    <!-- Terminal Header -->
+    <path d="M 0 10 A 10 10 0 0 1 10 0 L 590 0 A 10 10 0 0 1 600 10 L 600 38 L 0 38 Z" fill="#090D16" stroke="#334155" stroke-width="1"/>
+    <circle cx="25" cy="19" r="5" fill="#EF4444"/>
+    <circle cx="42" cy="19" r="5" fill="#F59E0B"/>
+    <circle cx="59" cy="19" r="5" fill="#10B981"/>
+    <text x="300" y="23" fill="#64748B" font-family="'JetBrains Mono', monospace" font-size="12" text-anchor="middle">book-cli --session active</text>
+
+    <!-- Terminal Content Output -->
+    <g transform="translate(25, 60)" font-family="'JetBrains Mono', monospace" font-size="13">
+      <!-- Command prompt -->
+      <text x="0" y="15" fill="#34D399" font-weight="700">❯</text>
+      <text x="18" y="15" fill="#F8FAFC">book --task</text>
+      <text x="120" y="15" fill="#38BDF8">"Refactor auth router &amp; add test"</text>
+
+      <!-- Banner -->
+      <text x="0" y="45" fill="#10B981" font-weight="600">[book v1.4.0]</text>
+      <text x="130" y="45" fill="#94A3B8">Model: Claude 3.5 Sonnet · Memory: Active</text>
+
+      <!-- Step 1 -->
+      <text x="0" y="78" fill="#38BDF8">ℹ</text>
+      <text x="18" y="78" fill="#CBD5E1">Loaded 12 project memories &amp; MCP tool registry</text>
+
+      <!-- Subagent execution -->
+      <rect x="0" y="98" width="550" height="75" rx="6" fill="#131C2E" stroke="#1E293B" stroke-width="1"/>
+      <text x="15" y="122" fill="#F59E0B" font-weight="600">⚡ [subagent: codebase-researcher]</text>
+      <text x="15" y="145" fill="#94A3B8" font-size="12">↳ Tool call: <tspan fill="#38BDF8">grep_search</tspan> { query: "handleAuth", path: "src/" }</text>
+      <text x="15" y="162" fill="#34D399" font-size="12">✔ Found 4 matches in src/auth/router.ts</text>
+
+      <!-- Execution progress -->
+      <text x="0" y="200" fill="#34D399">✔</text>
+      <text x="18" y="200" fill="#F8FAFC">Applying patch to <tspan fill="#38BDF8">src/auth/router.ts</tspan></text>
+
+      <text x="0" y="228" fill="#34D399">✔</text>
+      <text x="18" y="228" fill="#F8FAFC">Running Vitest suite... <tspan fill="#34D399">18/18 tests passed (0.4s)</tspan></text>
+
+      <!-- Prompt wait line -->
+      <text x="0" y="265" fill="#34D399" font-weight="700">❯</text>
+      <text x="18" y="265" fill="#94A3B8">Agent ready for next instruction...</text>
+      <rect x="320" y="252" width="8" height="16" fill="#34D399">
+        <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+      </rect>
+    </g>
+
+    <!-- Terminal Footer -->
+    <path d="M 0 350 L 600 350 L 600 380 A 10 10 0 0 1 590 390 L 10 390 A 10 10 0 0 1 0 380 Z" fill="#090D16" stroke="#334155" stroke-width="1"/>
+    <circle cx="25" cy="370" r="4" fill="#10B981"/>
+    <text x="38" y="374" fill="#34D399" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600">ONLINE</text>
+    <text x="120" y="374" fill="#64748B" font-family="'JetBrains Mono', monospace" font-size="11">Tokens: 184/s</text>
+    <text x="575" y="374" fill="#38BDF8" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="end">letrquan/book</text>
   </g>
-  <g transform="translate(72 374)" font-family="sans-serif" font-size="13" font-weight="700" letter-spacing="1.2">
-    <rect width="145" height="38" fill="#173B82"/><text x="72.5" y="25" fill="#F3F1E8" text-anchor="middle">TYPESCRIPT</text>
-    <rect x="156" width="74" height="38" fill="#121212"/><text x="193" y="25" fill="#F3F1E8" text-anchor="middle">INK</text>
-    <rect x="241" width="76" height="38" fill="#F15A24"/><text x="279" y="25" fill="#121212" text-anchor="middle">MCP</text>
-  </g>
-  <path d="M1116 370H1158V412H1116Z" fill="#F15A24"/>
 </svg>

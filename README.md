@@ -1,80 +1,81 @@
-<!--
-THESIS: A GitHub profile as a public product-test dossier, refusing the dark-gradient hero, badge wall, and identical project-card grid.
-OWN-WORLD: Cobalt ink, warm off-white stock, safety-orange registration marks, black rules, and precise technical diagrams.
-STORY: Visitors meet a software engineer through three real releases, understand their purposes, and open the relevant repository.
-FIRST VIEWPORT: A cobalt title sheet carries Zain's name at full scale; a direct statement and the release index follow without promotional chrome.
-FORM: Product Test Dossier — composition 01, seed 2a0181d6.
-FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, and DESIGN.md.
--->
-
 <p align="center">
-  <img src="./assets/header.svg" width="100%" alt="Zain's public work record: software engineer and product builder working across AI agents, browser utilities, and desktop experiences." />
+  <img src="./assets/header.svg" width="100%" alt="Zain's developer terminal: Software Engineer and Product Builder working across AI agents, browser utilities, and desktop applications." />
 </p>
 
 <p align="center">
-  I build useful software with <strong>sharp interfaces</strong> and <strong>reliable foundations</strong>.<br />
-  The work below sits where developer tooling, AI, and product craft meet.
+  Hi, I'm <strong>Zain</strong> (<code>@letrquan</code>). I build developer tooling, AI agent systems, browser utilities, and high-performance desktop apps.
 </p>
 
 <p align="center">
-  <a href="https://github.com/letrquan?tab=repositories">View all repositories →</a>
+  <a href="https://github.com/letrquan?tab=repositories"><strong>Explore Repositories →</strong></a>
 </p>
-
-## Selected releases
-
-### 01 — [Book](https://github.com/letrquan/book)
-
-<p align="center">
-  <a href="https://github.com/letrquan/book"><img src="./assets/book-card.svg" width="100%" alt="Book project dossier: a provider-agnostic AI coding agent with persistent sessions, memory, MCP support, and managed agents." /></a>
-</p>
-
-A provider-agnostic AI coding agent with a rich terminal UI, persistent sessions, memory, MCP support, and managed agents.
-
-**Built with:** TypeScript · Ink · MCP
-
-[Open the Book repository →](https://github.com/letrquan/book)
 
 ---
 
-### 02 — [Better Picture](https://github.com/letrquan/better-picture)
+## Featured Work
+
+### Book
 
 <p align="center">
-  <a href="https://github.com/letrquan/better-picture"><img src="./assets/better-picture-card.svg" width="100%" alt="Better Picture project dossier: a caption-aware floating mini-player for Chrome and Microsoft Edge." /></a>
+  <a href="https://github.com/letrquan/book">
+    <img src="./assets/book-card.svg" width="100%" alt="Book CLI project dossier: Provider-agnostic AI coding agent with Ink TUI, memory, MCP support, and managed subagents." />
+  </a>
 </p>
 
-A caption-aware floating mini-player that keeps video, subtitles, and focused controls together in Chrome and Microsoft Edge.
+Provider-agnostic AI coding CLI agent with a rich terminal UI, persistent sessions, memory graph, MCP protocol support, and autonomous subagent delegation.
 
-**Built with:** JavaScript · Manifest V3 · Playwright
-
-[Open the Better Picture repository →](https://github.com/letrquan/better-picture)
+* **Stack:** `TypeScript` · `Ink` · `Node.js` · `MCP Protocol`
+* **Repository:** [letrquan/book →](https://github.com/letrquan/book)
 
 ---
 
-### 03 — [V Voice](https://github.com/letrquan/v-voice-claude)
+### Better Picture
 
 <p align="center">
-  <a href="https://github.com/letrquan/v-voice-claude"><img src="./assets/v-voice-card.svg" width="100%" alt="V Voice project dossier: a lightweight Windows voice-to-text widget powered by local or cloud Whisper." /></a>
+  <a href="https://github.com/letrquan/better-picture">
+    <img src="./assets/better-picture-card.svg" width="100%" alt="Better Picture project dossier: Caption-aware floating mini-player browser extension for Chrome &amp; Edge." />
+  </a>
 </p>
 
-A lightweight Windows voice-to-text widget powered by local or cloud Whisper and built with Tauri.
+Caption-aware floating mini-player browser extension for Chrome and Microsoft Edge. Keeps video playback, live subtitle tracks, and floating controls synchronized in Picture-in-Picture mode.
 
-**Built with:** Rust · Tauri 2 · React
-
-[Open the V Voice repository →](https://github.com/letrquan/v-voice-claude)
-
-## Working notes
-
-I am interested in the details behind the demo: accessibility, graceful failure modes, tests, and interfaces that stay clear as systems grow.
-
-I work comfortably across web, terminal, browser-extension, and Windows desktop environments. Current attention is on making AI-agent workflows more capable without making them harder to understand or trust—and on small utilities where thoughtful details do most of the work.
-
-## Tools in regular use
-
-`TypeScript` · `JavaScript` · `Rust` · `React` · `Node.js` · `Tauri` · `Vite` · `Vitest` · `Playwright`
+* **Stack:** `JavaScript` · `Manifest V3` · `Playwright` · `Chrome / Edge`
+* **Repository:** [letrquan/better-picture →](https://github.com/letrquan/better-picture)
 
 ---
 
+### V Voice
+
 <p align="center">
-  <em>Good software should feel obvious after someone did the hard thinking.</em><br />
-  <a href="https://github.com/letrquan?tab=repositories">Explore all projects →</a>
+  <a href="https://github.com/letrquan/v-voice-claude">
+    <img src="./assets/v-voice-card.svg" width="100%" alt="V Voice project dossier: Lightweight Windows voice-to-text widget powered by local or cloud Whisper AI." />
+  </a>
+</p>
+
+Lightweight Windows voice-to-text dictation widget powered by local or cloud Whisper AI models, built with Rust and Tauri 2. Features near-zero latency, global hotkey triggering, and tiny memory footprint.
+
+* **Stack:** `Rust` · `Tauri 2` · `React` · `Whisper AI`
+* **Repository:** [letrquan/v-voice-claude →](https://github.com/letrquan/v-voice-claude)
+
+---
+
+## Technical Focus
+
+| Domain | Systems &amp; Stack | Focus Areas |
+| :--- | :--- | :--- |
+| **AI Tooling &amp; Agents** | TypeScript, React Ink, MCP, Node.js | Autonomous agents, memory systems, provider-agnostic LLM CLI workflows |
+| **Desktop &amp; Systems** | Rust, Tauri 2, WebGPU, C++ | Low-overhead desktop utilities, local AI inference, global OS hooks |
+| **Web &amp; Extensions** | JavaScript, React, Manifest V3, Vite | Browser extensions, media synchronization, automated E2E testing with Playwright |
+
+---
+
+## Engineering Approach
+
+- **Local-First &amp; Fast:** Tools should launch instantly, consume minimal system memory, and work reliably offline or with local models whenever possible.
+- **Sharp Interfaces:** Clean terminal UIs (Ink), desktop widgets (Tauri 2), and extension overlays designed for focus and productivity.
+- **Reliable Foundations:** Solid test coverage (Vitest, Playwright), strict typing (TypeScript &amp; Rust), and graceful failure modes.
+
+<p align="center">
+  <br />
+  <a href="https://github.com/letrquan?tab=repositories"><strong>View All Repositories on GitHub →</strong></a>
 </p>
