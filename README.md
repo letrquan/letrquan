@@ -1,3 +1,5 @@
+<!-- Profile README for github.com/letrquan -->
+
 <p align="center">
   <img src="./assets/header.svg" width="100%" alt="Zain — software engineer and product builder creating AI tools, browser utilities, and desktop experiences." />
 </p>
