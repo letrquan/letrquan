@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-08-11T00:00:00Z",
+  "title": "Design System: letrquan GitHub Profile",
+  "extensions": {
+    "colorMeta": {
+      "cobalt-ink": {
+        "role": "primary",
+        "displayName": "Cobalt Ink",
+        "canonical": "#173B82",
+        "tonalRamp": ["#071329", "#0D2450", "#173B82", "#2D5BAA", "#5F86CA", "#99B8E3", "#D2E1F5", "#F3F7FC"]
+      },
+      "paper-stock": {
+        "role": "neutral",
+        "displayName": "Paper Stock",
+        "canonical": "#F3F1E8",
+        "tonalRamp": ["#24231F", "#4D4B43", "#77746A", "#A5A196", "#CFCBC0", "#E3E0D6", "#F3F1E8", "#FCFBF7"]
+      },
+      "registration-orange": {
+        "role": "secondary",
+        "displayName": "Registration Orange",
+        "canonical": "#F15A24",
+        "tonalRamp": ["#351107", "#6D2410", "#A83C18", "#D84B1E", "#F15A24", "#F8895F", "#FBB69D", "#FEE2D7"]
+      },
+      "black-ink": {
+        "role": "neutral",
+        "displayName": "Black Ink",
+        "canonical": "#121212",
+        "tonalRamp": ["#121212", "#303030", "#555555", "#787878", "#A1A1A1", "#C2C2C2", "#E0E0E0", "#F7F7F7"]
+      }
+    },
+    "typographyMeta": {
+      "display": { "displayName": "Outlined Display", "purpose": "Title-sheet wordmark only; expressed as authored SVG paths." },
+      "body": { "displayName": "Host-Native Body", "purpose": "Accessible GitHub-rendered factual reading copy." },
+      "label": { "displayName": "Record Label", "purpose": "Compact, bold asset metadata such as release and issue labels." }
+    },
+    "shadows": [],
+    "motion": [],
+    "breakpoints": [
+      { "name": "github-readme", "value": "host responsive" }
+    ]
+  },
+  "components": [
+    {
+      "name": "Release Record",
+      "kind": "custom",
+      "refersTo": "release-link",
+      "description": "A full-width, square-corner dossier asset followed by factual Markdown and a direct repository link.",
+      "html": "<article class=\"ds-release\"><span class=\"ds-release-number\">01</span><strong>BOOK</strong><a href=\"#\">OPEN RECORD →</a></article>",
+      "css": ".ds-release { display:flex; align-items:center; gap:16px; border-top:2px solid #121212; border-bottom:1px solid #121212; padding:20px 0; color:#121212; font-family:Arial,sans-serif; } .ds-release-number { color:#F15A24; font:700 13px monospace; } .ds-release strong { flex:1; color:#173B82; font-size:24px; letter-spacing:-.04em; } .ds-release a { color:#173B82; font-weight:700; text-decoration-thickness:2px; text-underline-offset:3px; } .ds-release a:hover { color:#F15A24; } .ds-release a:focus-visible { outline:3px solid #F15A24; outline-offset:4px; }"
+    },
+    {
+      "name": "Dossier Title Sheet",
+      "kind": "custom",
+      "refersTo": "title-sheet",
+      "description": "A saturated cobalt masthead with paper rules, record labels, and an orange registration mark.",
+      "html": "<section class=\"ds-title\"><span>LETRQUAN / PUBLIC WORK</span><strong>ZAIN</strong><small>SOFTWARE ENGINEER / PRODUCT BUILDER</small></section>",
+      "css": ".ds-title { display:grid; gap:28px; background:#173B82; color:#F3F1E8; padding:36px; border:2px solid #F3F1E8; font-family:Arial,sans-serif; } .ds-title span, .ds-title small { font-size:11px; font-weight:700; letter-spacing:.14em; } .ds-title strong { font-size:72px; font-weight:900; line-height:.8; letter-spacing:-.07em; }"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Product Test Dossier",
+    "overview": "This is a public work record for an independent software maker. It treats each release as evidence: a named, numbered document with a concise factual description and a direct route to the repository. The visual language belongs to technical publishing rather than a generic developer portfolio—ink, paper, registration marks, rules, and diagrams do the identifying work.",
+    "keyCharacteristics": [
+      "Saturated cobalt title sheets against warm off-white fields.",
+      "Safety orange used as a registration signal, not ambient decoration.",
+      "Full-width project dossiers with hard rules and one concise technical diagram each.",
+      "Direct repository links and factual copy in ordinary GitHub reading flow."
+    ],
+    "rules": [
+      { "name": "The One-Signal Rule", "body": "Orange is a measurement mark: reserve it for a small, high-information portion of an asset.", "section": "colors" },
+      { "name": "The Flat Ink Rule", "body": "Use flat fills and exact rules; gradients, glow, glass, and faux depth do not belong in this system.", "section": "colors" },
+      { "name": "The Evidence-First Type Rule", "body": "Display lettering establishes the record once; after that, the reader gets plain language, not ornamental type.", "section": "typography" }
+    ],
+    "dos": [
+      "Do make each asset explain a real release through a distinct, countable technical diagram.",
+      "Do retain ordinary Markdown descriptions and links below images so identity never replaces readable evidence.",
+      "Do keep the four-color ink-and-stock palette intact in authored profile assets.",
+      "Do use generous whitespace and hard rules to pace a scan through projects."
+    ],
+    "donts": [
+      "Don't use dark-gradient heroes, neon glow, cyberpunk terminal theater, glass, or generic SaaS panel stacks.",
+      "Don't turn tools into a badge wall; describe the actual work first.",
+      "Don't add rounded cards, soft shadows, or pill-shaped controls to dossier assets.",
+      "Don't introduce commercial claims, testimonials, metrics, or product capabilities not evidenced by the linked repositories.",
+      "Don't retain exploratory mock pages after their composition decision has been implemented; the README and committed SVG assets are the sole source of visual truth."
+    ]
+  }
+}

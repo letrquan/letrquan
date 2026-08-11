@@ -1,92 +1,31 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 360" role="img" aria-labelledby="title desc" preserveAspectRatio="xMidYMid meet">
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 560" role="img" aria-labelledby="title desc">
   <title id="title">Zain — software engineer and product builder</title>
-  <desc id="desc">A dark gradient banner with connected product nodes and text describing AI tools, browser utilities, and desktop experiences.</desc>
-
-  <defs>
-    <linearGradient id="background" x1="0" y1="0" x2="1" y2="1">
-      <stop offset="0" stop-color="#070B18" />
-      <stop offset="0.52" stop-color="#0E1530" />
-      <stop offset="1" stop-color="#101A2D" />
-    </linearGradient>
-    <linearGradient id="accent" x1="0" y1="0" x2="1" y2="0">
-      <stop offset="0" stop-color="#A78BFA" />
-      <stop offset="0.5" stop-color="#7C3AED" />
-      <stop offset="1" stop-color="#22D3EE" />
-    </linearGradient>
-    <radialGradient id="violetGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0" stop-color="#7C3AED" stop-opacity="0.34" />
-      <stop offset="1" stop-color="#7C3AED" stop-opacity="0" />
-    </radialGradient>
-    <radialGradient id="cyanGlow" cx="50%" cy="50%" r="50%">
-      <stop offset="0" stop-color="#22D3EE" stop-opacity="0.25" />
-      <stop offset="1" stop-color="#22D3EE" stop-opacity="0" />
-    </radialGradient>
-    <pattern id="grid" width="32" height="32" patternUnits="userSpaceOnUse">
-      <path d="M 32 0 L 0 0 0 32" fill="none" stroke="#94A3B8" stroke-opacity="0.08" stroke-width="1" />
-    </pattern>
-    <filter id="softGlow" x="-80%" y="-80%" width="260%" height="260%">
-      <feGaussianBlur stdDeviation="6" result="blur" />
-      <feMerge>
-        <feMergeNode in="blur" />
-        <feMergeNode in="SourceGraphic" />
-      </feMerge>
-    </filter>
-    <clipPath id="frame">
-      <rect x="1" y="1" width="1198" height="358" rx="28" />
-    </clipPath>
-  </defs>
-
-  <g clip-path="url(#frame)">
-    <rect width="1200" height="360" fill="url(#background)" />
-    <rect width="1200" height="360" fill="url(#grid)" />
-    <ellipse cx="268" cy="72" rx="340" ry="250" fill="url(#violetGlow)" />
-    <ellipse cx="1045" cy="282" rx="320" ry="240" fill="url(#cyanGlow)" />
-    <path d="M0 318 C245 258 370 396 615 312 C842 234 930 318 1200 230 L1200 360 L0 360 Z" fill="#0B1124" fill-opacity="0.72" />
-
-    <g transform="translate(82 54)">
-      <rect x="0" y="0" width="171" height="30" rx="15" fill="#111A34" stroke="#A78BFA" stroke-opacity="0.55" />
-      <circle cx="18" cy="15" r="4" fill="#22D3EE" filter="url(#softGlow)" />
-      <text x="32" y="20" fill="#CBD5E1" font-family="Consolas, 'SFMono-Regular', monospace" font-size="12" letter-spacing="1.6">GITHUB / LETRQUAN</text>
-    </g>
-
-    <g transform="translate(82 112)">
-      <text x="0" y="72" fill="#F8FAFC" font-family="'Segoe UI', Arial, sans-serif" font-size="78" font-weight="800" letter-spacing="11">ZAIN</text>
-      <rect x="2" y="91" width="492" height="5" rx="2.5" fill="url(#accent)" />
-      <text x="2" y="130" fill="#E2E8F0" font-family="'Segoe UI', Arial, sans-serif" font-size="22" font-weight="600" letter-spacing="2.4">SOFTWARE ENGINEER / PRODUCT BUILDER</text>
-      <text x="2" y="170" fill="#94A3B8" font-family="'Segoe UI', Arial, sans-serif" font-size="18" letter-spacing="0.7">AI agents · browser utilities · native-feeling desktop tools</text>
-    </g>
-
-    <g transform="translate(752 58)">
-      <path d="M78 88 L202 44 L310 112 L248 232 L104 224 Z" fill="none" stroke="#64748B" stroke-opacity="0.42" stroke-width="2" stroke-dasharray="7 8" />
-      <path d="M78 88 L248 232 M202 44 L104 224 M310 112 L104 224" fill="none" stroke="url(#accent)" stroke-opacity="0.55" stroke-width="2" />
-
-      <g transform="translate(78 88)">
-        <circle r="26" fill="#151D3A" stroke="#A78BFA" stroke-width="2" />
-        <circle r="8" fill="#A78BFA" filter="url(#softGlow)" />
-        <text x="0" y="48" text-anchor="middle" fill="#94A3B8" font-family="Consolas, monospace" font-size="11" letter-spacing="1.2">IDEA</text>
-      </g>
-      <g transform="translate(202 44)">
-        <circle r="31" fill="#151D3A" stroke="#8B5CF6" stroke-width="2" />
-        <path d="M-10 -3 L-2 6 L12 -11" fill="none" stroke="#C4B5FD" stroke-width="4" stroke-linecap="round" stroke-linejoin="round" />
-        <text x="0" y="54" text-anchor="middle" fill="#94A3B8" font-family="Consolas, monospace" font-size="11" letter-spacing="1.2">BUILD</text>
-      </g>
-      <g transform="translate(310 112)">
-        <circle r="24" fill="#112235" stroke="#22D3EE" stroke-width="2" />
-        <path d="M-9 7 L0 -8 L9 7 Z" fill="none" stroke="#67E8F9" stroke-width="3" stroke-linejoin="round" />
-        <text x="0" y="46" text-anchor="middle" fill="#94A3B8" font-family="Consolas, monospace" font-size="11" letter-spacing="1.2">SHIP</text>
-      </g>
-      <g transform="translate(248 232)">
-        <circle r="38" fill="#111B36" stroke="#A78BFA" stroke-width="2" />
-        <circle r="19" fill="none" stroke="#22D3EE" stroke-width="3" stroke-dasharray="8 5" />
-        <circle r="5" fill="#F8FAFC" />
-        <text x="0" y="64" text-anchor="middle" fill="#CBD5E1" font-family="Consolas, monospace" font-size="12" letter-spacing="1.4">LEARN</text>
-      </g>
-      <g transform="translate(104 224)">
-        <circle r="22" fill="#151D3A" stroke="#64748B" stroke-width="2" />
-        <path d="M-8 0 H8 M0 -8 V8" stroke="#CBD5E1" stroke-width="3" stroke-linecap="round" />
-      </g>
-    </g>
+  <desc id="desc">A cobalt field-note title sheet for Zain's public work record, introducing software for developer tools, AI, browser utilities, and desktop experiences.</desc>
+  <rect width="1200" height="560" fill="#173B82"/>
+  <path d="M48 48H1152M48 512H1152" stroke="#F3F1E8" stroke-width="2"/>
+  <path d="M48 48V512M1152 48V512" stroke="#F3F1E8" stroke-width="1" opacity=".55"/>
+  <g fill="#F3F1E8" font-family="sans-serif" font-size="13" font-weight="700" letter-spacing="2">
+    <text x="76" y="88">LETRQUAN / PUBLIC WORK RECORD</text>
+    <text x="1124" y="88" text-anchor="end">ISSUE 01</text>
+    <text x="76" y="484">SOFTWARE ENGINEER / PRODUCT BUILDER</text>
+    <text x="1124" y="484" text-anchor="end">FIELD NOTES · 2026</text>
   </g>
-
-  <rect x="1" y="1" width="1198" height="358" rx="28" fill="none" stroke="url(#accent)" stroke-opacity="0.45" stroke-width="2" />
+  <g transform="translate(76 146)" fill="#F3F1E8" fill-rule="evenodd">
+    <path d="M0 0H194V40L63 192H194V232H0V192L131 40H0Z"/>
+    <path d="M218 232L291 0H359L432 232H385L370 179H279L264 232ZM292 139H357L325 39Z"/>
+    <path d="M458 0H505V232H458Z"/>
+    <path d="M531 232V0H579L681 156V0H728V232H681L578 74V232Z"/>
+  </g>
+  <g transform="translate(898 174)" fill="none">
+    <circle cx="105" cy="105" r="83" stroke="#F3F1E8" stroke-width="2"/>
+    <circle cx="105" cy="105" r="49" stroke="#F15A24" stroke-width="11"/>
+    <path d="M105 0V210M0 105H210" stroke="#F3F1E8" stroke-width="1" opacity=".72"/>
+    <path d="M22 105H188M105 22V188" stroke="#F15A24" stroke-width="1" opacity=".8"/>
+    <circle cx="105" cy="105" r="6" fill="#F3F1E8"/>
+    <path d="M-12 0H24V36H-12ZM186 174H222V210H186Z" fill="#F15A24" stroke="none"/>
+  </g>
+  <g fill="#F3F1E8" font-family="sans-serif" font-size="14" font-weight="700" letter-spacing="1.3">
+    <text x="76" y="424">AI AGENTS · BROWSER UTILITIES · DESKTOP EXPERIENCES</text>
+    <text x="1003" y="421" text-anchor="middle" font-size="10" letter-spacing="1.6">USEFUL SOFTWARE</text>
+  </g>
 </svg>
