@@ -1,136 +1,134 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="100%" role="img" aria-labelledby="bp-title bp-desc">
-  <title id="bp-title">Better Picture — Caption-Aware Floating Mini-Player</title>
-  <desc id="bp-desc">Project dossier and browser extension mockup for Better Picture, a floating mini-player with subtitle syncing for Chrome and Edge.</desc>
+  <title id="bp-title">Better Picture — Caption-aware floating mini-player</title>
+  <desc id="bp-desc">Project card for Better Picture. The left column summarises a Chromium extension for Chrome and Microsoft Edge that moves a page's own video element into a floating mini-player. The right column shows a browser window with a Document Picture-in-Picture overlay containing a synced caption bar and playback controls.</desc>
 
   <defs>
     <linearGradient id="bp-bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0B0F19"/>
-      <stop offset="100%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#0E1524"/>
     </linearGradient>
-    <linearGradient id="bp-browser-bg" x1="0%" y1="0%" x2="0%" y2="100%">
+    <linearGradient id="bp-browser" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#0F172A"/>
       <stop offset="100%" stop-color="#090D16"/>
     </linearGradient>
-    <linearGradient id="cyan-accent" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="bp-accent" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#38BDF8"/>
-      <stop offset="100%" stop-color="#60A5FA"/>
+      <stop offset="100%" stop-color="#818CF8"/>
     </linearGradient>
-    <linearGradient id="pip-video-bg" x1="0%" y1="0%" x2="100%" y2="100%">
+    <linearGradient id="bp-pip" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#1E293B"/>
       <stop offset="100%" stop-color="#0F172A"/>
     </linearGradient>
+    <radialGradient id="bp-glow" cx="14%" cy="4%" r="58%">
+      <stop offset="0%" stop-color="#38BDF8" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#38BDF8" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="bp-clip">
+      <rect width="1200" height="480" rx="14"/>
+    </clipPath>
   </defs>
 
-  <!-- Container Base -->
-  <rect width="1200" height="480" fill="url(#bp-bg)" rx="12" stroke="#1E293B" stroke-width="1.5"/>
-  <rect x="0" y="0" width="1200" height="480" rx="12" fill="none" stroke="#38BDF8" stroke-width="2" opacity="0.3"/>
+  <g clip-path="url(#bp-clip)">
+    <rect width="1200" height="480" fill="url(#bp-bg)"/>
+    <rect width="1200" height="480" fill="url(#bp-glow)"/>
+    <rect width="1200" height="3" fill="url(#bp-accent)"/>
+  </g>
+  <rect x="0.5" y="0.5" width="1199" height="479" rx="14" fill="none" stroke="#1E293B" stroke-width="1"/>
 
-  <!-- Left Column: Details & Information -->
-  <g transform="translate(60, 55)">
-    <!-- Kicker / Tag -->
-    <rect x="0" y="0" width="175" height="24" rx="4" fill="#0369A1" opacity="0.5"/>
-    <text x="12" y="16" fill="#38BDF8" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" letter-spacing="1">PROJECT // 02</text>
+  <!-- Left column -->
+  <g transform="translate(60, 56)">
+    <rect x="0" y="0" width="132" height="24" rx="4" fill="#075985"/>
+    <text x="12" y="16" fill="#7DD3FC" font-family="'JetBrains Mono','Fira Code',monospace" font-size="11" font-weight="700" letter-spacing="1.2">PROJECT / 02</text>
 
-    <!-- Title -->
-    <text x="0" y="72" fill="#F8FAFC" font-family="'Inter', sans-serif" font-size="44" font-weight="900" letter-spacing="-1">Better Picture</text>
-    <text x="0" y="102" fill="#38BDF8" font-family="'JetBrains Mono', monospace" font-size="15" font-weight="600">Caption-Aware Floating Mini-Player</text>
+    <text x="0" y="76" fill="#F8FAFC" font-family="'Inter',system-ui,sans-serif" font-size="42" font-weight="800" letter-spacing="-1">Better Picture</text>
+    <text x="0" y="106" fill="#38BDF8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="14.5" font-weight="600">Caption-Aware Floating Mini-Player</text>
 
-    <!-- Description -->
-    <text x="0" y="138" fill="#94A3B8" font-family="sans-serif" font-size="14" leading="22">
-      <tspan x="0" y="138">A browser extension for Chrome &amp; Microsoft Edge that</tspan>
-      <tspan x="0" y="160">elevates Picture-in-Picture mode by syncing captions,</tspan>
-      <tspan x="0" y="182">subtitles, and interactive controls in one floating window.</tspan>
+    <text fill="#94A3B8" font-family="'Inter',system-ui,sans-serif" font-size="14">
+      <tspan x="0" y="144">A Chromium extension for Chrome and Microsoft Edge that</tspan>
+      <tspan x="0" y="166">keeps a page's video watchable in a compact floating</tspan>
+      <tspan x="0" y="188">player — captions, seek, volume and skip controls intact.</tspan>
     </text>
 
-    <!-- Bullet Highlights -->
-    <g transform="translate(0, 210)">
-      <circle cx="6" cy="12" r="3" fill="#38BDF8"/>
-      <text x="18" y="16" fill="#CBD5E1" font-family="sans-serif" font-size="13">Synced live subtitle track directly inside PiP frame</text>
-
-      <circle cx="6" cy="38" r="3" fill="#38BDF8"/>
-      <text x="18" y="42" fill="#CBD5E1" font-family="sans-serif" font-size="13">Manifest V3 compliant (Chrome &amp; Edge)</text>
-
-      <circle cx="6" cy="64" r="3" fill="#38BDF8"/>
-      <text x="18" y="68" fill="#CBD5E1" font-family="sans-serif" font-size="13">Fully automated E2E test suite using Playwright</text>
+    <g transform="translate(0, 216)" font-family="'Inter',system-ui,sans-serif" font-size="13" fill="#CBD5E1">
+      <circle cx="5" cy="11" r="3" fill="#38BDF8"/>
+      <text x="18" y="15">Moves the page's own video element — no second stream</text>
+      <circle cx="5" cy="39" r="3" fill="#38BDF8"/>
+      <text x="18" y="43">Document Picture-in-Picture with an in-page fallback</text>
+      <circle cx="5" cy="67" r="3" fill="#38BDF8"/>
+      <text x="18" y="71">Captions from native tracks, with an on-page fallback</text>
     </g>
 
-    <!-- Stack Pills -->
-    <g transform="translate(0, 320)">
-      <rect x="0" y="0" width="100" height="30" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1"/>
-      <text x="50" y="19" fill="#F59E0B" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600" text-anchor="middle">JavaScript</text>
-
-      <rect x="110" y="0" width="115" height="30" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1"/>
-      <text x="167" y="19" fill="#34D399" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600" text-anchor="middle">Manifest V3</text>
-
-      <rect x="235" y="0" width="105" height="30" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1"/>
-      <text x="287" y="19" fill="#38BDF8" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600" text-anchor="middle">Playwright</text>
-
-      <rect x="350" y="0" width="90" height="30" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1"/>
-      <text x="395" y="19" fill="#818CF8" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600" text-anchor="middle">Chrome/Edge</text>
+    <g transform="translate(0, 324)" font-family="'JetBrains Mono','Fira Code',monospace" font-size="12" font-weight="600">
+      <rect x="0" y="0" width="96" height="30" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+      <text x="48" y="19.5" fill="#F59E0B" text-anchor="middle">JavaScript</text>
+      <rect x="106" y="0" width="103" height="30" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+      <text x="157" y="19.5" fill="#34D399" text-anchor="middle">Manifest V3</text>
+      <rect x="219" y="0" width="96" height="30" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+      <text x="267" y="19.5" fill="#38BDF8" text-anchor="middle">Playwright</text>
+      <rect x="325" y="0" width="103" height="30" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+      <text x="376" y="19.5" fill="#818CF8" text-anchor="middle">Chrome/Edge</text>
     </g>
   </g>
 
-  <!-- Right Column: Browser & Floating PiP Window UI Mockup -->
+  <!-- Right column: browser with floating mini-player -->
   <g transform="translate(540, 45)">
-    <!-- Main Browser Container -->
-    <rect width="600" height="390" rx="10" fill="url(#bp-browser-bg)" stroke="#334155" stroke-width="1.5"/>
+    <rect width="600" height="390" rx="12" fill="url(#bp-browser)" stroke="#334155" stroke-width="1"/>
 
-    <!-- Browser Address Bar & Chrome -->
-    <path d="M 0 10 A 10 10 0 0 1 10 0 L 590 0 A 10 10 0 0 1 600 10 L 600 42 L 0 42 Z" fill="#090D16" stroke="#334155" stroke-width="1"/>
-    <circle cx="25" cy="21" r="5" fill="#EF4444"/>
-    <circle cx="42" cy="21" r="5" fill="#F59E0B"/>
-    <circle cx="59" cy="21" r="5" fill="#10B981"/>
+    <path d="M 0 12 A 12 12 0 0 1 12 0 L 588 0 A 12 12 0 0 1 600 12 L 600 42 L 0 42 Z" fill="#090D16"/>
+    <line x1="0" y1="42" x2="600" y2="42" stroke="#334155" stroke-width="1"/>
+    <circle cx="24" cy="21" r="5" fill="#EF4444"/>
+    <circle cx="41" cy="21" r="5" fill="#F59E0B"/>
+    <circle cx="58" cy="21" r="5" fill="#10B981"/>
 
-    <!-- Address Pill -->
-    <rect x="90" y="9" width="380" height="24" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1"/>
-    <text x="105" y="25" fill="#94A3B8" font-family="'JetBrains Mono', monospace" font-size="11">https://video-platform.com/watch?v=demo</text>
+    <rect x="88" y="9" width="358" height="24" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+    <text x="102" y="25" fill="#94A3B8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="11">youtube.com/watch?v=…</text>
 
-    <!-- Extension Icon Indicator -->
-    <rect x="480" y="9" width="105" height="24" rx="6" fill="#0284C7"/>
-    <text x="532" y="25" fill="#F8FAFC" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" text-anchor="middle">⚡ CC PIP ON</text>
+    <rect x="458" y="9" width="128" height="24" rx="6" fill="#0369A1"/>
+    <text x="522" y="25" fill="#F0F9FF" font-family="'JetBrains Mono','Fira Code',monospace" font-size="10.5" font-weight="700" text-anchor="middle">Mini-player active</text>
 
-    <!-- Video Background simulation inside browser -->
-    <g transform="translate(25, 60)">
-      <!-- Main Web page video area (dimmed) -->
-      <rect width="550" height="270" rx="6" fill="#1E293B" opacity="0.4"/>
-      <text x="275" y="140" fill="#64748B" font-family="sans-serif" font-size="14" text-anchor="middle">Background Web Video Player (PiP Active)</text>
+    <!-- Page beneath -->
+    <g transform="translate(25, 58)">
+      <rect width="550" height="272" rx="6" fill="#1E293B" opacity="0.35"/>
+      <text x="275" y="30" fill="#475569" font-family="'Inter',system-ui,sans-serif" font-size="12.5" text-anchor="middle">Original tab · video handed to the floating window</text>
 
-      <!-- Floating Picture-in-Picture Overlay Window -->
-      <g transform="translate(180, 40)">
-        <!-- PiP Window Box with glow -->
-        <rect width="350" height="200" rx="10" fill="url(#pip-video-bg)" stroke="#38BDF8" stroke-width="2"/>
+      <!-- Floating Document PiP window -->
+      <g transform="translate(95, 46)">
+        <rect width="360" height="200" rx="10" fill="url(#bp-pip)" stroke="#38BDF8" stroke-width="1.5"/>
 
-        <!-- Video visual mockup graphics inside PiP -->
-        <path d="M 30 110 Q 90 40 175 90 T 320 60" fill="none" stroke="#38BDF8" stroke-width="3" opacity="0.7"/>
-        <path d="M 30 130 Q 120 70 210 120 T 320 100" fill="none" stroke="#818CF8" stroke-width="2" opacity="0.5"/>
+        <!-- PiP chrome -->
+        <path d="M 0 10 A 10 10 0 0 1 10 0 L 350 0 A 10 10 0 0 1 360 10 L 360 26 L 0 26 Z" fill="#0B1220"/>
+        <text x="12" y="18" fill="#7DD3FC" font-family="'JetBrains Mono','Fira Code',monospace" font-size="9.5" font-weight="700" letter-spacing="0.8">DOCUMENT PICTURE-IN-PICTURE</text>
+        <path d="M 342 10 L 350 18 M 350 10 L 342 18" stroke="#64748B" stroke-width="1.4" stroke-linecap="round"/>
 
-        <!-- Playhead / Waveform graphics -->
-        <circle cx="175" cy="90" r="6" fill="#38BDF8"/>
+        <!-- Video content suggestion -->
+        <path d="M 28 104 Q 90 46 168 88 T 332 62" fill="none" stroke="#38BDF8" stroke-width="2.5" opacity="0.65"/>
+        <path d="M 28 120 Q 118 72 206 112 T 332 96" fill="none" stroke="#818CF8" stroke-width="2" opacity="0.45"/>
+        <circle cx="168" cy="88" r="5" fill="#38BDF8"/>
 
-        <!-- Subtitle Box Overlay (The core value proposition!) -->
-        <rect x="25" y="130" width="300" height="32" rx="6" fill="#0F172A" opacity="0.92" stroke="#334155" stroke-width="1"/>
-        <text x="150" y="151" fill="#F8FAFC" font-family="'Inter', sans-serif" font-size="12" font-weight="600" text-anchor="middle">[CC] Caption synced directly inside PiP frame</text>
+        <!-- Caption bar -->
+        <rect x="22" y="124" width="316" height="30" rx="6" fill="#0B1220" opacity="0.95" stroke="#334155" stroke-width="1"/>
+        <rect x="30" y="133" width="26" height="13" rx="3" fill="#334155"/>
+        <text x="43" y="143" fill="#7DD3FC" font-family="'JetBrains Mono','Fira Code',monospace" font-size="8.5" font-weight="700" text-anchor="middle">CC</text>
+        <text x="64" y="144" fill="#F1F5F9" font-family="'Inter',system-ui,sans-serif" font-size="11.5">Captions follow the video into the window</text>
 
-        <!-- PiP Controls Bar at bottom -->
-        <rect x="0" y="170" width="350" height="30" fill="#090D16" rx="0"/>
-        <path d="M 0 170 L 350 170 L 350 190 A 10 10 0 0 1 340 200 L 10 200 A 10 10 0 0 1 0 190 Z" fill="#090D16"/>
-
-        <!-- Play icon -->
-        <polygon points="25,180 25,190 35,185" fill="#38BDF8"/>
-        <!-- Timeline bar -->
-        <rect x="50" y="183" width="220" height="4" rx="2" fill="#334155"/>
-        <rect x="50" y="183" width="130" height="4" rx="2" fill="#38BDF8"/>
-        <circle cx="180" cy="185" r="4" fill="#38BDF8"/>
-        <!-- Subtitle toggle badge -->
-        <text x="325" y="189" fill="#34D399" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" text-anchor="end">CC 100%</text>
+        <!-- Controls -->
+        <path d="M 0 168 L 360 168 L 360 190 A 10 10 0 0 1 350 200 L 10 200 A 10 10 0 0 1 0 190 Z" fill="#0B1220"/>
+        <line x1="0" y1="168" x2="360" y2="168" stroke="#1E293B" stroke-width="1"/>
+        <polygon points="20,178 20,190 31,184" fill="#38BDF8"/>
+        <rect x="44" y="182" width="190" height="4" rx="2" fill="#334155"/>
+        <rect x="44" y="182" width="112" height="4" rx="2" fill="#38BDF8"/>
+        <circle cx="156" cy="184" r="4.5" fill="#38BDF8"/>
+        <text x="246" y="188" fill="#94A3B8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="9.5">12:04 / 24:18</text>
+        <path d="M 330 179 L 334 179 L 339 175 L 339 193 L 334 189 L 330 189 Z" fill="#94A3B8"/>
+        <path d="M 343 180 Q 347 184 343 188" fill="none" stroke="#94A3B8" stroke-width="1.4" stroke-linecap="round"/>
       </g>
     </g>
 
-    <!-- Browser Footer Bar -->
-    <path d="M 0 350 L 600 350 L 600 380 A 10 10 0 0 1 590 390 L 10 390 A 10 10 0 0 1 0 380 Z" fill="#090D16" stroke="#334155" stroke-width="1"/>
-    <circle cx="25" cy="370" r="4" fill="#38BDF8"/>
-    <text x="38" y="374" fill="#38BDF8" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600">EXTENSION ACTIVE</text>
-    <text x="170" y="374" fill="#64748B" font-family="'JetBrains Mono', monospace" font-size="11">Auto-sync: On</text>
-    <text x="575" y="374" fill="#38BDF8" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="end">letrquan/better-picture</text>
+    <line x1="0" y1="352" x2="600" y2="352" stroke="#334155" stroke-width="1"/>
+    <path d="M 0 352 L 600 352 L 600 378 A 12 12 0 0 1 588 390 L 12 390 A 12 12 0 0 1 0 378 Z" fill="#090D16"/>
+    <circle cx="24" cy="371" r="4" fill="#38BDF8"/>
+    <text x="36" y="375" fill="#38BDF8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="11" font-weight="600">EXTENSION ACTIVE</text>
+    <text x="176" y="375" fill="#64748B" font-family="'JetBrains Mono','Fira Code',monospace" font-size="11">Caption source: native track</text>
+    <text x="576" y="375" fill="#38BDF8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="11" text-anchor="end">letrquan/better-picture</text>
   </g>
 </svg>

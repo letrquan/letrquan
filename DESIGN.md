@@ -50,33 +50,43 @@ The aesthetic uses dark developer workspace visuals: terminal windows with synta
 - **Code & CLI Monospace**: `JetBrains Mono` / `Fira Code` for terminal headers, code blocks, status lines, and tech pills inside SVG assets.
 - **Body & Headings**: GitHub default system fonts and `Inter` for clean Markdown reading flow.
 
+## Shared Asset Signature
+
+Every asset in `assets/` is built on the same frame so the four read as one system:
+
+- Canvas corner radius `14px`, clipped, with a `1px #1E293B` outer stroke.
+- A `3px` gradient rule across the top edge, tinted to the asset's identity accent (cyan → indigo → emerald for the header, emerald → cyan for Book, cyan → indigo for Better Picture, amber → rose for V Voice).
+- A low-opacity radial accent glow anchored at the top-left for depth.
+- Inner window chrome at `12px` radius: title bar, three traffic-light dots, and a status bar carrying the repository slug on the right.
+- Type scale: mono `11–14.5px` for chrome, labels, and code; `Inter` `12–14px` for prose; `Inter` `42px / 800` for card titles.
+
 ## SVGs & Components
 
-1. **`assets/header.svg`**:
-   - Full-width dark mode developer terminal window (`1200x460`).
-   - Left side: Interactive code block defining developer persona (`developer.ts`) with live cursor prompt line.
-   - Right side: Shipped releases index with live status indicators (`● Book CLI`, `● Better Picture`, `● V Voice`).
+1. **`assets/header.svg`** (`1200x440`):
+   - Left: a `developer.ts` code block declaring name, role, focus, stack, and principle, closed by a live prompt line.
+   - Right: a `// SELECTED WORK` index — three project rows with an identity status dot, a right-aligned primary-language chip, and a one-line summary.
 
-2. **`assets/book-card.svg`**:
-   - High-fidelity terminal UI mockup for Book CLI agent (`1200x480`).
-   - Shows active terminal session: task prompt, MCP tool execution, subagent research loop, and test status.
+2. **`assets/book-card.svg`** (`1200x480`):
+   - Left: project dossier — kicker, title, positioning line, three capability bullets, four stack pills.
+   - Right: a terminal session showing a print-mode invocation, project instruction loading, an `explorer` subagent making a `ToolSearch` → `Grep` call, patch application, and hand-off to `validator`.
 
-3. **`assets/better-picture-card.svg`**:
-   - Browser extension mockup for Better Picture (`1200x480`).
-   - Displays floating Picture-in-Picture window with synced subtitles overlay and custom playback controls.
+3. **`assets/better-picture-card.svg`** (`1200x480`):
+   - Right: a browser window with a Document Picture-in-Picture overlay — caption bar with a `CC` chip, timeline, elapsed time, and volume control, over a dimmed source tab.
 
-4. **`assets/v-voice-card.svg`**:
-   - Windows desktop widget mockup for V Voice (`1200x480`).
-   - Features dynamic audio waveform equalizer, hotkey badge `[Win + Alt + V]`, and Whisper latency metrics (`42ms`).
+4. **`assets/v-voice-card.svg`** (`1200x480`):
+   - Right: a focused document window receiving dictated text, with the floating pill widget layered on top — mic button with an animated voice-activity ring, amber level meter, and a `LISTENING · whisper.cpp · VI` status cluster.
 
 ## Do's and Don'ts
 
 ### Do:
 - Keep all SVG diagrams high-fidelity, representing real project workflows and interfaces.
+- Draw arrows, chevrons, and carets as `<path>` geometry. Decorative Unicode (`❯`, `↳`) does not survive font fallback when GitHub proxies the SVG and renders as stray punctuation.
+- Assume `JetBrains Mono` and `Inter` are unavailable and size text against the generic `monospace` / `system-ui` fallbacks. Verify by rendering headlessly before committing.
 - Maintain WCAG AA contrast for text layers and code syntax colors.
 - Use clean Markdown tables and precise technology pills.
 
 ### Don't:
 - Don't use generic shields.io badge walls or bright neon logos.
 - Don't use low-detail placeholder SVG cards with fake terminal prompt lines (`> _`).
-- Don't introduce fake metrics or commercial claims.
+- Don't introduce fake metrics or commercial claims. Version numbers, latency figures, memory footprints, token rates, and test counts must be verifiable in the linked repository or they do not appear. Named models go stale — describe the provider surface instead.
+- Don't tint decorative elements at random. Level meters and status dots carry the asset's single identity accent.

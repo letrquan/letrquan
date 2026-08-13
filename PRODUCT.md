@@ -46,7 +46,8 @@ Visitors usually arrive from GitHub search, repository links, hiring or collabor
 - `assets/book-card.svg` — Book project card.
 - `assets/better-picture-card.svg` — Better Picture project card.
 - `assets/v-voice-card.svg` — V Voice project card.
-- Real project links currently point to `github.com/letrquan/book`, `github.com/letrquan/better-picture`, and `github.com/letrquan/v-voice-claude`.
+- Real project links currently point to `github.com/letrquan/book`, `github.com/letrquan/better-picture`, and `github.com/letrquan/v-voice-claude`. All three are public, and each carries a description and topic set on GitHub that matches the copy used here.
+- Every claim in the profile copy and in the SVG assets traces to the linked repository's own README. Book is at `v0.1.1`; V Voice and Better Picture are untagged. No latency, memory, throughput, or test-count figures are asserted anywhere, because none are published in the source repositories.
 
 ## Product Principles
 

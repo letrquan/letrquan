@@ -1,148 +1,154 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 480" width="100%" role="img" aria-labelledby="vv-title vv-desc">
-  <title id="vv-title">V Voice — Lightweight Voice-to-Text Windows Widget</title>
-  <desc id="vv-desc">Project dossier and desktop widget mockup for V Voice, a voice-to-text dictation widget powered by Rust, Tauri 2, and Whisper AI.</desc>
+  <title id="vv-title">V Voice — Floating Windows dictation widget</title>
+  <desc id="vv-desc">Project card for V Voice. The left column summarises a Windows voice-to-text widget built in Rust and Tauri 2, running Whisper locally or in the cloud, with voice activity detection and Vietnamese support. The right column shows a document window with the floating pill widget layered over it, listening and inserting a dictated line of text.</desc>
 
   <defs>
     <linearGradient id="vv-bg" x1="0%" y1="0%" x2="100%" y2="100%">
       <stop offset="0%" stop-color="#0B0F19"/>
-      <stop offset="100%" stop-color="#111827"/>
+      <stop offset="100%" stop-color="#0E1524"/>
     </linearGradient>
-    <linearGradient id="vv-widget-bg" x1="0%" y1="0%" x2="0%" y2="100%">
-      <stop offset="0%" stop-color="#1E1B4B"/>
-      <stop offset="100%" stop-color="#0F172A"/>
+    <linearGradient id="vv-shell" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0F172A"/>
+      <stop offset="100%" stop-color="#090D16"/>
     </linearGradient>
-    <linearGradient id="amber-accent" x1="0%" y1="0%" x2="100%" y2="0%">
+    <linearGradient id="vv-accent" x1="0%" y1="0%" x2="100%" y2="0%">
       <stop offset="0%" stop-color="#F59E0B"/>
-      <stop offset="100%" stop-color="#EF4444"/>
+      <stop offset="100%" stop-color="#F43F5E"/>
     </linearGradient>
+    <linearGradient id="vv-pill" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1E1B4B"/>
+      <stop offset="100%" stop-color="#141C31"/>
+    </linearGradient>
+    <radialGradient id="vv-glow" cx="14%" cy="4%" r="58%">
+      <stop offset="0%" stop-color="#F59E0B" stop-opacity="0.12"/>
+      <stop offset="100%" stop-color="#F59E0B" stop-opacity="0"/>
+    </radialGradient>
+    <clipPath id="vv-clip">
+      <rect width="1200" height="480" rx="14"/>
+    </clipPath>
   </defs>
 
-  <!-- Container Base -->
-  <rect width="1200" height="480" fill="url(#vv-bg)" rx="12" stroke="#1E293B" stroke-width="1.5"/>
-  <rect x="0" y="0" width="1200" height="480" rx="12" fill="none" stroke="#F59E0B" stroke-width="2" opacity="0.3"/>
+  <g clip-path="url(#vv-clip)">
+    <rect width="1200" height="480" fill="url(#vv-bg)"/>
+    <rect width="1200" height="480" fill="url(#vv-glow)"/>
+    <rect width="1200" height="3" fill="url(#vv-accent)"/>
+  </g>
+  <rect x="0.5" y="0.5" width="1199" height="479" rx="14" fill="none" stroke="#1E293B" stroke-width="1"/>
 
-  <!-- Left Column: Details & Information -->
-  <g transform="translate(60, 55)">
-    <!-- Kicker / Tag -->
-    <rect x="0" y="0" width="190" height="24" rx="4" fill="#78350F" opacity="0.6"/>
-    <text x="12" y="16" fill="#F59E0B" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="700" letter-spacing="1">PROJECT // 03</text>
+  <!-- Left column -->
+  <g transform="translate(60, 56)">
+    <rect x="0" y="0" width="132" height="24" rx="4" fill="#78350F"/>
+    <text x="12" y="16" fill="#FBBF24" font-family="'JetBrains Mono','Fira Code',monospace" font-size="11" font-weight="700" letter-spacing="1.2">PROJECT / 03</text>
 
-    <!-- Title -->
-    <text x="0" y="72" fill="#F8FAFC" font-family="'Inter', sans-serif" font-size="44" font-weight="900" letter-spacing="-1">V Voice</text>
-    <text x="0" y="102" fill="#F59E0B" font-family="'JetBrains Mono', monospace" font-size="15" font-weight="600">Lightweight Windows Voice-to-Text</text>
+    <text x="0" y="76" fill="#F8FAFC" font-family="'Inter',system-ui,sans-serif" font-size="42" font-weight="800" letter-spacing="-1">V Voice</text>
+    <text x="0" y="106" fill="#F59E0B" font-family="'JetBrains Mono','Fira Code',monospace" font-size="14.5" font-weight="600">Windows Dictation, Powered by Whisper</text>
 
-    <!-- Description -->
-    <text x="0" y="138" fill="#94A3B8" font-family="sans-serif" font-size="14" leading="22">
-      <tspan x="0" y="138">A minimalist Windows desktop widget powered by local or</tspan>
-      <tspan x="0" y="160">cloud Whisper AI models. Offers global hotkey dictation</tspan>
-      <tspan x="0" y="182">with near-zero latency and minimal memory footprint.</tspan>
+    <text fill="#94A3B8" font-family="'Inter',system-ui,sans-serif" font-size="14">
+      <tspan x="0" y="144">An always-on-top pill widget that turns speech into text</tspan>
+      <tspan x="0" y="166">and types it straight into whatever window has focus —</tspan>
+      <tspan x="0" y="188">no dialog, no copy-paste, no leaving the app you're in.</tspan>
     </text>
 
-    <!-- Bullet Highlights -->
-    <g transform="translate(0, 210)">
-      <circle cx="6" cy="12" r="3" fill="#F59E0B"/>
-      <text x="18" y="16" fill="#CBD5E1" font-family="sans-serif" font-size="13">High-performance Rust core built with Tauri 2</text>
-
-      <circle cx="6" cy="38" r="3" fill="#F59E0B"/>
-      <text x="18" y="42" fill="#CBD5E1" font-family="sans-serif" font-size="13">Supports local Whisper models &amp; API fallbacks</text>
-
-      <circle cx="6" cy="64" r="3" fill="#F59E0B"/>
-      <text x="18" y="68" fill="#CBD5E1" font-family="sans-serif" font-size="13">Global hotkey trigger &amp; instant text insertion</text>
+    <g transform="translate(0, 216)" font-family="'Inter',system-ui,sans-serif" font-size="13" fill="#CBD5E1">
+      <circle cx="5" cy="11" r="3" fill="#F59E0B"/>
+      <text x="18" y="15">Local whisper.cpp or cloud engines (OpenAI, Groq)</text>
+      <circle cx="5" cy="39" r="3" fill="#F59E0B"/>
+      <text x="18" y="43">Voice activity detection with streaming partials</text>
+      <circle cx="5" cy="67" r="3" fill="#F59E0B"/>
+      <text x="18" y="71">Vietnamese tone and diacritic handling built in</text>
     </g>
 
-    <!-- Stack Pills -->
-    <g transform="translate(0, 320)">
-      <rect x="0" y="0" width="75" height="30" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1"/>
-      <text x="37" y="19" fill="#EF4444" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600" text-anchor="middle">Rust</text>
-
-      <rect x="85" y="0" width="95" height="30" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1"/>
-      <text x="132" y="19" fill="#F59E0B" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600" text-anchor="middle">Tauri 2</text>
-
-      <rect x="190" y="0" width="85" height="30" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1"/>
-      <text x="232" y="19" fill="#38BDF8" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600" text-anchor="middle">React</text>
-
-      <rect x="285" y="0" width="115" height="30" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1"/>
-      <text x="342" y="19" fill="#34D399" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600" text-anchor="middle">Whisper AI</text>
+    <g transform="translate(0, 324)" font-family="'JetBrains Mono','Fira Code',monospace" font-size="12" font-weight="600">
+      <rect x="0" y="0" width="53" height="30" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+      <text x="26" y="19.5" fill="#F43F5E" text-anchor="middle">Rust</text>
+      <rect x="63" y="0" width="74" height="30" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+      <text x="100" y="19.5" fill="#F59E0B" text-anchor="middle">Tauri 2</text>
+      <rect x="147" y="0" width="60" height="30" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+      <text x="177" y="19.5" fill="#38BDF8" text-anchor="middle">React</text>
+      <rect x="217" y="0" width="103" height="30" rx="6" fill="#1E293B" stroke="#334155" stroke-width="1"/>
+      <text x="268" y="19.5" fill="#34D399" text-anchor="middle">whisper.cpp</text>
     </g>
   </g>
 
-  <!-- Right Column: Windows Desktop Widget UI Mockup -->
+  <!-- Right column: focused app with the floating pill on top -->
   <g transform="translate(540, 45)">
-    <!-- Container -->
-    <rect width="600" height="390" rx="10" fill="#090D16" stroke="#334155" stroke-width="1.5"/>
+    <rect width="600" height="390" rx="12" fill="url(#vv-shell)" stroke="#334155" stroke-width="1"/>
 
-    <!-- Desktop Grid Background -->
-    <rect x="15" y="15" width="570" height="360" rx="8" fill="#0F172A" stroke="#1E293B" stroke-width="1"/>
+    <path d="M 0 12 A 12 12 0 0 1 12 0 L 588 0 A 12 12 0 0 1 600 12 L 600 38 L 0 38 Z" fill="#090D16"/>
+    <line x1="0" y1="38" x2="600" y2="38" stroke="#334155" stroke-width="1"/>
+    <circle cx="24" cy="19" r="5" fill="#EF4444"/>
+    <circle cx="41" cy="19" r="5" fill="#F59E0B"/>
+    <circle cx="58" cy="19" r="5" fill="#10B981"/>
+    <text x="300" y="23.5" fill="#64748B" font-family="'JetBrains Mono','Fira Code',monospace" font-size="12" text-anchor="middle">V Voice — floating over the focused app</text>
 
-    <!-- Floating Widget Window (Centered) -->
-    <g transform="translate(60, 50)">
-      <!-- Main Widget Box with amber border glow -->
-      <rect width="480" height="280" rx="12" fill="url(#vv-widget-bg)" stroke="#F59E0B" stroke-width="2"/>
+    <rect x="446" y="9" width="130" height="20" rx="4" fill="#1E293B"/>
+    <text x="511" y="23" fill="#FBBF24" font-family="'JetBrains Mono','Fira Code',monospace" font-size="10" font-weight="700" text-anchor="middle">Win + Alt + V</text>
 
-      <!-- Window Header Bar -->
-      <path d="M 0 12 A 12 12 0 0 1 12 0 L 468 0 A 12 12 0 0 1 480 12 L 480 40 L 0 40 Z" fill="#0F172A" stroke="#334155" stroke-width="1"/>
-      <circle cx="25" cy="20" r="5" fill="#EF4444"/>
-      <circle cx="42" cy="20" r="5" fill="#F59E0B"/>
-      <circle cx="59" cy="20" r="5" fill="#10B981"/>
-      <text x="240" y="24" fill="#F8FAFC" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="600" text-anchor="middle">V Voice — Dictation Active</text>
+    <g transform="translate(25, 58)">
+      <!-- The app receiving the text -->
+      <rect width="550" height="272" rx="6" fill="#0F172A" stroke="#1E293B" stroke-width="1"/>
+      <path d="M 0 6 A 6 6 0 0 1 6 0 L 544 0 A 6 6 0 0 1 550 6 L 550 30 L 0 30 Z" fill="#0B1220"/>
+      <line x1="0" y1="30" x2="550" y2="30" stroke="#1E293B" stroke-width="1"/>
+      <text x="16" y="20" fill="#64748B" font-family="'JetBrains Mono','Fira Code',monospace" font-size="10.5">meeting-notes.md — focused window</text>
 
-      <!-- Hotkey Indicator Badge -->
-      <rect x="340" y="10" width="125" height="20" rx="4" fill="#1E293B"/>
-      <text x="402" y="24" fill="#F59E0B" font-family="'JetBrains Mono', monospace" font-size="10" font-weight="700" text-anchor="middle">Win + Alt + V</text>
+      <text font-family="'Inter',system-ui,sans-serif" font-size="12.5">
+        <tspan x="20" y="62" fill="#64748B" font-weight="700">## Project sync</tspan>
+        <tspan x="20" y="90" fill="#94A3B8">- Ship the caption fallback for YouTube first.</tspan>
+        <tspan x="20" y="116" fill="#94A3B8">- Move the memory approval flow behind a flag.</tspan>
+        <tspan x="20" y="142" fill="#FBBF24">- Add Vietnamese tone marks to the model prompt</tspan>
+      </text>
+      <rect x="314" y="132" width="7" height="14" fill="#FBBF24">
+        <animate attributeName="opacity" values="1;1;0;0" dur="1.1s" repeatCount="indefinite"/>
+      </rect>
 
-      <!-- Audio Waveform Visualization Bar -->
-      <g transform="translate(30, 65)">
-        <text x="0" y="20" fill="#F59E0B" font-family="'JetBrains Mono', monospace" font-size="12" font-weight="700">● RECORDING AUDIO</text>
-        <text x="420" y="20" fill="#94A3B8" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="end">Whisper.cpp (Local)</text>
+      <!-- Floating pill widget -->
+      <g transform="translate(105, 176)">
+        <rect x="4" y="6" width="340" height="76" rx="38" fill="#020617" opacity="0.55"/>
+        <rect width="340" height="76" rx="38" fill="url(#vv-pill)" stroke="#F59E0B" stroke-width="1.5"/>
 
-        <!-- Dynamic Audio Equalizer Bars -->
-        <g transform="translate(0, 35)">
-          <rect x="0" y="10" width="8" height="30" rx="3" fill="#F59E0B"/>
-          <rect x="14" y="0" width="8" height="50" rx="3" fill="#EF4444"/>
-          <rect x="28" y="18" width="8" height="34" rx="3" fill="#F59E0B"/>
-          <rect x="42" y="5" width="8" height="42" rx="3" fill="#34D399"/>
-          <rect x="56" y="22" width="8" height="28" rx="3" fill="#F59E0B"/>
-          <rect x="70" y="8" width="8" height="44" rx="3" fill="#EF4444"/>
-          <rect x="84" y="25" width="8" height="22" rx="3" fill="#F59E0B"/>
-          <rect x="98" y="2" width="8" height="48" rx="3" fill="#38BDF8"/>
-          <rect x="112" y="15" width="8" height="35" rx="3" fill="#F59E0B"/>
-          <rect x="126" y="20" width="8" height="30" rx="3" fill="#F59E0B"/>
-          <rect x="140" y="5" width="8" height="45" rx="3" fill="#EF4444"/>
-          <rect x="154" y="25" width="8" height="25" rx="3" fill="#F59E0B"/>
-          <rect x="168" y="10" width="8" height="38" rx="3" fill="#34D399"/>
-          <rect x="182" y="0" width="8" height="50" rx="3" fill="#EF4444"/>
-          <rect x="196" y="15" width="8" height="35" rx="3" fill="#F59E0B"/>
-          <rect x="210" y="8" width="8" height="42" rx="3" fill="#38BDF8"/>
-          <rect x="224" y="20" width="8" height="30" rx="3" fill="#F59E0B"/>
-          <rect x="238" y="5" width="8" height="45" rx="3" fill="#EF4444"/>
-          <rect x="252" y="28" width="8" height="22" rx="3" fill="#F59E0B"/>
-          <rect x="266" y="12" width="8" height="38" rx="3" fill="#34D399"/>
-          <rect x="280" y="2" width="8" height="48" rx="3" fill="#EF4444"/>
-          <rect x="294" y="18" width="8" height="32" rx="3" fill="#F59E0B"/>
-          <rect x="308" y="10" width="8" height="40" rx="3" fill="#38BDF8"/>
-          <rect x="322" y="22" width="8" height="26" rx="3" fill="#F59E0B"/>
-          <rect x="336" y="6" width="8" height="44" rx="3" fill="#EF4444"/>
-          <rect x="350" y="15" width="8" height="35" rx="3" fill="#34D399"/>
+        <!-- Mic with voice-activity ring -->
+        <circle cx="42" cy="38" r="26" fill="none" stroke="#F59E0B" stroke-width="1.5" opacity="0.35">
+          <animate attributeName="r" values="22;29;22" dur="1.8s" repeatCount="indefinite"/>
+          <animate attributeName="opacity" values="0.45;0.05;0.45" dur="1.8s" repeatCount="indefinite"/>
+        </circle>
+        <circle cx="42" cy="38" r="19" fill="#F59E0B"/>
+        <rect x="38" y="28" width="8" height="14" rx="4" fill="#1E1B4B"/>
+        <path d="M 34 39 Q 42 48 50 39" fill="none" stroke="#1E1B4B" stroke-width="2" stroke-linecap="round"/>
+        <line x1="42" y1="46" x2="42" y2="50" stroke="#1E1B4B" stroke-width="2" stroke-linecap="round"/>
 
-          <!-- Animated equalizer simulation pulse -->
-          <circle cx="390" cy="25" r="16" fill="#F59E0B" opacity="0.2">
-            <animate attributeName="r" values="16;24;16" dur="1.2s" repeatCount="indefinite"/>
-            <animate attributeName="opacity" values="0.4;0.1;0.4" dur="1.2s" repeatCount="indefinite"/>
-          </circle>
-          <circle cx="390" cy="25" r="10" fill="#F59E0B"/>
+        <!-- Level meter -->
+        <g fill="#F59E0B">
+          <rect x="76" y="33" width="4" height="10" rx="2" opacity="0.75"/>
+          <rect x="84" y="29" width="4" height="18" rx="2"/>
+          <rect x="92" y="25" width="4" height="26" rx="2" opacity="0.85"/>
+          <rect x="100" y="21" width="4" height="34" rx="2" fill="#FBBF24"/>
+          <rect x="108" y="27" width="4" height="22" rx="2"/>
+          <rect x="116" y="23" width="4" height="30" rx="2" opacity="0.85"/>
+          <rect x="124" y="30" width="4" height="16" rx="2" opacity="0.7"/>
+          <rect x="132" y="19" width="4" height="38" rx="2" fill="#FBBF24"/>
+          <rect x="140" y="26" width="4" height="24" rx="2"/>
+          <rect x="148" y="32" width="4" height="12" rx="2" opacity="0.7"/>
+          <rect x="156" y="24" width="4" height="28" rx="2" opacity="0.9"/>
+          <rect x="164" y="20" width="4" height="36" rx="2" fill="#FBBF24"/>
+          <rect x="172" y="28" width="4" height="20" rx="2"/>
+          <rect x="180" y="22" width="4" height="32" rx="2" opacity="0.85"/>
+          <rect x="188" y="31" width="4" height="14" rx="2" opacity="0.7"/>
+          <rect x="196" y="25" width="4" height="26" rx="2"/>
+          <rect x="204" y="29" width="4" height="18" rx="2" opacity="0.8"/>
+          <rect x="212" y="33" width="4" height="10" rx="2" opacity="0.65"/>
         </g>
 
-        <!-- Transcription Preview Output -->
-        <rect x="0" y="115" width="420" height="50" rx="8" fill="#0F172A" stroke="#334155" stroke-width="1"/>
-        <text x="12" y="136" fill="#F8FAFC" font-family="'Inter', sans-serif" font-size="13" font-weight="500">"Building high-performance desktop tools with Rust &amp; Tauri..."</text>
-        <text x="12" y="154" fill="#34D399" font-family="'JetBrains Mono', monospace" font-size="10">↳ Transcribed in 42ms • Pasted into active window</text>
+        <line x1="228" y1="20" x2="228" y2="56" stroke="#334155" stroke-width="1"/>
+        <text x="244" y="34" fill="#FBBF24" font-family="'JetBrains Mono','Fira Code',monospace" font-size="10.5" font-weight="700" letter-spacing="0.6">LISTENING</text>
+        <text x="244" y="51" fill="#94A3B8" font-family="'JetBrains Mono','Fira Code',monospace" font-size="9.5">whisper.cpp · VI</text>
       </g>
-
-      <!-- Widget Footer -->
-      <line x1="0" y1="245" x2="480" y2="245" stroke="#334155" stroke-width="1"/>
-      <text x="20" y="265" fill="#10B981" font-family="'JetBrains Mono', monospace" font-size="11" font-weight="600">● LATENCY: 42ms</text>
-      <text x="180" y="265" fill="#64748B" font-family="'JetBrains Mono', monospace" font-size="11">RAM: 28MB</text>
-      <text x="460" y="265" fill="#F59E0B" font-family="'JetBrains Mono', monospace" font-size="11" text-anchor="end">letrquan/v-voice-claude</text>
     </g>
+
+    <line x1="0" y1="352" x2="600" y2="352" stroke="#334155" stroke-width="1"/>
+    <path d="M 0 352 L 600 352 L 600 378 A 12 12 0 0 1 588 390 L 12 390 A 12 12 0 0 1 0 378 Z" fill="#090D16"/>
+    <circle cx="24" cy="371" r="4" fill="#F59E0B"/>
+    <text x="36" y="375" fill="#FBBF24" font-family="'JetBrains Mono','Fira Code',monospace" font-size="11" font-weight="600">DICTATING</text>
+    <text x="124" y="375" fill="#64748B" font-family="'JetBrains Mono','Fira Code',monospace" font-size="11">Engine: local · cloud fallback</text>
+    <text x="576" y="375" fill="#F59E0B" font-family="'JetBrains Mono','Fira Code',monospace" font-size="11" text-anchor="end">letrquan/v-voice-claude</text>
   </g>
 </svg>
