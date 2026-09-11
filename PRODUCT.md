@@ -24,14 +24,14 @@ The profile centers on AI product craft: useful developer-oriented tools with sh
 
 ## Operating Context
 
-Visitors usually arrive from GitHub search, repository links, hiring or collaboration discussions, or product discovery. The primary profile surface is a GitHub README supported by inline SVG assets and repository links.
+Visitors usually arrive from GitHub search, repository links, hiring or collaboration discussions, or product discovery. The profile surface is a plain-Markdown GitHub README with repository links.
 
 ## Capabilities and Constraints
 
 - Showcase selected repositories with accurate descriptions and direct GitHub links.
 - Communicate current areas of work: developer tooling, AI, product craft, browser extensions, terminal experiences, and Windows desktop utilities.
 - Preserve factual copy: do not invent customers, benchmarks, testimonials, pricing, adoption, or deployment claims.
-- The current implementation is GitHub-flavored Markdown with committed SVG assets, not a standalone runnable web application.
+- The current implementation is plain GitHub-flavored Markdown, not a standalone runnable web application.
 
 ## Brand Commitments
 
@@ -41,13 +41,9 @@ Visitors usually arrive from GitHub search, repository links, hiring or collabor
 
 ## Evidence on Hand
 
-- `README.md` — the profile copy, selected-work descriptions, toolbox, and current-focus statements.
-- `assets/header.svg` — profile header visual.
-- `assets/book-card.svg` — Book project card.
-- `assets/better-picture-card.svg` — Better Picture project card.
-- `assets/v-voice-card.svg` — V Voice project card.
+- `README.md` — the whole profile: a short introduction, three project links with one-line descriptions, and a contact line. Plain Markdown, no assets.
 - Real project links currently point to `github.com/letrquan/book`, `github.com/letrquan/better-picture`, and `github.com/letrquan/v-voice-claude`. All three are public, and each carries a description and topic set on GitHub that matches the copy used here.
-- Every claim in the profile copy and in the SVG assets traces to the linked repository's own README. Book is at `v0.1.1`; V Voice and Better Picture are untagged. No latency, memory, throughput, or test-count figures are asserted anywhere, because none are published in the source repositories.
+- Every claim in the profile copy traces to the linked repository's own README. Book is at `v0.1.1`; V Voice and Better Picture are untagged. No latency, memory, throughput, or test-count figures are asserted anywhere, because none are published in the source repositories.
 
 ## Product Principles
 
@@ -58,4 +54,4 @@ Visitors usually arrive from GitHub search, repository links, hiring or collabor
 
 ## Accessibility & Inclusion
 
-Target WCAG 2.2 AA for authored profile assets and content, including meaningful alternative text, adequate contrast, legible type, and no meaning conveyed by color alone.
+Target WCAG 2.2 AA. With no authored images, this reduces to plain, descriptive link text and short sentences.

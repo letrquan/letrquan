@@ -2,7 +2,7 @@
 version: 1
 slug: "readme-md"
 primary_target: "README.md"
-related_targets: ["assets/header.svg","assets/book-card.svg","assets/better-picture-card.svg","assets/v-voice-card.svg"]
+related_targets: []
 ---
 
 # GitHub profile README
